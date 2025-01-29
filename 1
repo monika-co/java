@@ -1,0 +1,34 @@
+public class Student {
+    private int age;
+    private String name;
+    public Student(int age, String name) {
+        this.age = age;
+        this.name = name;
+
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+}
+
+
+
+
+//private variables can only be accessed within the same class
+//Getter methods let other classes access private variables
+//Getter method naming convention: get + VariableName (e.g., getName())
+//The this keyword helps distinguish between class variables and parameter variables when they have the same name
+//Constructor initializes the class variables when an object is created
+
+
+//About this:
+//Used when parameter names match class variable names
+//Not required if variable names are different
+//Example: this.age = age means "class variable age = parameter age"
